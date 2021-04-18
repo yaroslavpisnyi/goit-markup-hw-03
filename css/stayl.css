@@ -12,10 +12,25 @@
     --label-font: "Raleway", sans-serif;
 
 }
-
-
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
 /*font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif;*/  
+
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
 
 body{
 
@@ -27,10 +42,43 @@ body{
     
 }
 
-.bg-color {
-    background-color: var(--bk-round-cl);
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+}
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
+.bg-color {
+    background-color: var(--bk-round-cl);
+
+}
+.position{
+    margin-top: 95px;
+    margin-bottom: 10px;
+   
+}
+.position-list{
+    display: flex;
+}
+.hero{
+    text-align: center;
+}
+/*porfolio*/
 .visually-hidden {
     position: absolute !important;
     clip: rect(1px 1px 1px 1px);
@@ -73,7 +121,68 @@ body{
     color: var(--main-text-cl);
 
 }
+/*headder*/
+.page-header{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
 
+.menu-portfolio{
+    display: flex;
+    
+}
+
+.menu-portfolio-centr{
+    margin-left: 300px;
+    margin-bottom: 50px;
+}
+.card-text-portfolio{
+    margin-top: 4px;
+}
+.card-heading{
+    margin-top: 20px;
+}
+.card-set-portfolio{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+
+}
+.card-set-list{
+    flex-basis: calc(100% / 3  - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.menu-portfolio-item{
+    margin-right: 52px;
+}
+
+.menu-portfolio-position{
+    margin-right: auto;
+    margin-left: auto;
+}
+.menu{
+    display: inline-flex;
+}
+.menu-mail {
+    margin-right: 330px;
+}
+
+.menu-item{
+    margin-right: 40px;
+
+}
+.menu-item:not(:last-child)
+.logo{
+    margin-right: 95px;
+}
 .label-stayl {
 
     font-family: var(--label-font);
@@ -83,7 +192,9 @@ body{
     letter-spacing: 0.03em;
     color: var(--accent-cl);
 }
-
+.label-position{
+    margin-right: 93px;
+}
 .label-color {
     color: black;
 }
@@ -95,6 +206,7 @@ body{
     text-decoration: none;
 
 }
+
 .link-item-nav{
     font-family: Roboto;
     font-style: normal;
@@ -112,6 +224,8 @@ body{
 }
 
 .list {
+    margin: 0;
+    padding-left: 0;
     list-style: none;
 }
 
@@ -120,7 +234,7 @@ body{
     font-style: inherit;
 }
 
-.page-title {
+.page-title .conteiner {
 
     font-family: var(--title-font);
     font-weight: 900;
@@ -142,6 +256,14 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-text-cl);
+    margin-bottom: 50px;
+    margin-top: 95px;
+}
+/*Наши качества*/
+.container-list{
+    width: 1200;
+
+
 
 }
 
@@ -173,7 +295,21 @@ body{
 
 
 }
+.item{
+    margin-left: 30px;
+    margin-top: 30px;
+}
 
+.card-set{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+
+}
+.team-position{
+    margin-bottom: 95px;
+}
 .portfolio-title-list {
     
     font-family: var(--title-font);
